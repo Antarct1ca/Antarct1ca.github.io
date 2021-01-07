@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    margin:0px;
+    padding:0px;
+    font-family:"宋体";
+    color:#fbfbfb;
+    font-size:20px;
+    line-height:24px;
+}
+a{
+    color:#666666;
+    text-decoration:none;
+}
+a:hover{
+    color:#666666;
+    text-decoration:underline;
+}
+img{
+    border:none;
+    margin:0px;
+    padding:0px;
+}
+
+#nyMain{
+    width:1002px;
+    margin:0px auto;
+    padding:0px;
+    clear:both;
+}
+.nyBorder{
+    width: 1020px;
+    border: #0C0C0C solid 0px;
+    float: left;
+    overflow: hidden;
+    display: inline;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    padding-top: 25px;
+    padding-right: 5px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+}
+.nyLeft{
+    filter:alpha(Opacity=90);-moz-opacity:0.85;opacity: 0.85;
+    background: #0C0C0C;
+    width:1000px;
+    min-height:450px;
+    /*border-right:#0C0C0C solid 1px;*/
+    border:2px solid darkslategray;
+    border-radius:30px;
+    margin:0px;
+    padding:0px 5px 0px 5px;
+    float:left;
+    overflow:hidden;
+    display:inline;
+}

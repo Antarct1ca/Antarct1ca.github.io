@@ -1,29 +1,144 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>华晨宇</title>
-    <meta name="keywords" content="Hua Chen Yu Music" />
+    <meta name="keywords" content="Hua Chen Yu Music"/>
     <meta name="description" content="Hua Chen Yu Music
-" />
-    <link href="/css/main.css" rel="stylesheet" type="text/css" />
+"/>
+    <link href="CSS/Css.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="js/js/jquery-1.8.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.jslides.js"></script>
     <SCRIPT src="js/ScrollPic.js" type=text/javascript></SCRIPT>
+    <style type="text/css">
+
+        div, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*首先准备一个放图片的容器*/
+        .container {
+            filter: alpha(Opacity=100);
+            -moz-opacity: 1;
+            opacity: 1;
+            width: 800px;
+            height: 540px;
+            position: relative;
+            top: 0px;
+            left: 10%;
+        }
+
+        /*图片样式*/
+        .container img {
+            position: absolute;
+            width: 100%;
+            transition-duration: 1s;
+            opacity: 0;
+        }
+
+        /*图片显示开关*/
+        .container img.on {
+            opacity: 1;
+        }
+
+        .left, .right {
+            position: absolute;
+            top: 40%;
+            width: 60px;
+            height: 100px;
+            line-height: 100px;
+            background-color: #666;
+            opacity: 0.5;
+            text-align: center;
+            font-size: 60px;
+            color: #ccc;
+            display: none;
+            cursor: pointer;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            right: 0;
+        }
+
+        .container:hover .left, .container:hover .right {
+            display: block;
+        }
+
+        .left:hover, .right:hover {
+            color: #fff;
+        }
+
+        /*焦点*/
+        .container ul {
+            position: absolute;
+            bottom: 0;
+            max-width: 800px;
+            padding: 0px 300px;
+        }
+
+        .container ul li {
+            list-style: none;
+            float: left;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-left: 10px;
+            background-color: #ccc;
+            cursor: pointer;
+        }
+
+        .container ul li.active {
+            background-color: #fff;
+        }
+
+    </style>
 </head>
-<body>
-<body background="\img\background.jpg">
+<body background="img/background.jpg">
 
 
 <div id="nyMain">
 
     <div class="nyBorder">
+        <div class="container">
+            <!-- 图片 -->
+            <!-- 先把第一张图片显示出来 -->
+            <img class="on" src="images/降临.jpg"/>
+            <img src="images/斗牛.jpg"/>
+            <img src="images/国王与乞丐.jpg"/>
+            <img src="images/寒鸦少年.jpg"/>
+            <img src="images/好想爱这个世界啊.jpg"/>
+            <img src="images/我管你.jpg"/>
+            <img src="images/写给未来的孩子.jpg"/>
+
+            <!-- 左右按钮 -->
+            <div class="left"><</div>
+            <div class="right">></div>
+
+            <!-- 焦点 -->
+            <ul>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <br>
         <div class="nyLeft">
-                <p><strong><span style="font-size:24px">华晨宇</span>-中国男歌手，音乐天才，实力唱将</strong></p>
+            <p><strong><span style="font-size:24px">华晨宇</span>-中国男歌手，音乐天才，实力唱将</strong></p>
             <p><span style="font-size:16px"><strong>主要奖项</strong></span></p>
 
-            <p>2013/09/27&nbsp;&nbsp; <span style="color:#FF0000">《快乐男声》</span>获得全国总冠军&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="" src="\img\华晨宇.jpg" style="float:right; height:510px; width:324px" /></p>
+            <p>2013/09/27&nbsp;&nbsp; <span style="color:#FF0000">《快乐男声》</span>获得全国总冠军&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                    alt="" src="img/华晨宇.jpg" style="float:right; height:510px; width:324px"/></p>
             <p>2013/12/06&nbsp; 最受欢迎男歌手奖--<span style="color:#FF0000">第6届音乐风云榜新人盛典</span></p>
 
             <p>2014/03/15&nbsp; &ldquo;新浪微博年度星光奖&rdquo;-<span style="color:#FF0000">新浪微博之夜</span></p>
@@ -50,29 +165,48 @@
 
             <p>2015/02/02&nbsp; 最受欢迎流行音乐人奖-<span style="color:#FF0000">第4届阿比鹿音乐奖</span></p>
 
-            <p>2015/3/25&nbsp;&nbsp; 年度最佳内地男歌手奖; 年度最佳QQ音乐互动演唱会奖《2014火星演唱会》<span style="color:#FF0000">音乐年度盛典暨巅峰榜颁奖典礼</span></p>
+            <p>2015/3/25&nbsp;&nbsp; 年度最佳内地男歌手奖; 年度最佳QQ音乐互动演唱会奖《2014火星演唱会》<span
+                    style="color:#FF0000">音乐年度盛典暨巅峰榜颁奖典礼</span></p>
 
             <p>2015/3/30&nbsp;&nbsp; 全民选择男歌手奖；最佳专辑奖《卡西莫多的礼物》-<span style="color:#FF0000">第22届东方风云榜</span></p>
 
-            <p>2015/4/13 &nbsp; 年度内地最受欢迎男歌手奖；&nbsp;年度最受欢迎专辑奖《卡西莫多的礼物》最佳专辑演唱奖《卡西莫多的礼物》最佳专辑制作奖《卡西莫多的礼物》-<span style="color:#FF0000">&nbsp;第15届音乐风云榜年度盛典</span></p>
+            <p>2015/4/13 &nbsp; 年度内地最受欢迎男歌手奖；&nbsp;年度最受欢迎专辑奖《卡西莫多的礼物》最佳专辑演唱奖《卡西莫多的礼物》最佳专辑制作奖《卡西莫多的礼物》-<span
+                    style="color:#FF0000">&nbsp;第15届音乐风云榜年度盛典</span></p>
 
-            <p>2015/08/23&nbsp; 年度最受欢迎新人奖；年度金曲奖《Let you go》、年度最佳作曲奖《卡西莫多的礼物》-<span style="color:#FF0000">Music Radio中国排行榜</span>－</p>
+            <p>2015/08/23&nbsp; 年度最受欢迎新人奖；年度金曲奖《Let you go》、年度最佳作曲奖《卡西莫多的礼物》-<span style="color:#FF0000">Music Radio中国排行榜</span>－
+            </p>
 
             <p>2016/01/07&nbsp; 2015亚洲新歌榜冠军王、 年度最受欢迎男歌手-<span style="color:#FF0000">新浪微博之夜</span></p>
 
             <p>2016/01/12&nbsp; 最具人气男歌手-<span style="color:#FF0000">移动视频风云盛典</span></p>
 
-            <p><span style="color:#FF0000">​</span>2016/09/27&nbsp; 最佳男歌手-<span style="color:#FF0000">2016亚洲新歌榜年度盛典</span></p>
+            <p><span style="color:#FF0000">​</span>2016/09/27&nbsp; 最佳男歌手-<span
+                    style="color:#FF0000">2016亚洲新歌榜年度盛典</span></p>
 
             <p><strong>专辑：</strong></p>
 
-            <p><span style="font-family:times new roman,serif; font-size:12.0pt">2014 </span><span style="font-family:宋体; font-size:12.0pt">首张专辑《<strong>卡西莫多的礼物</strong>》</span></p>
+            <p><span style="font-family:times new roman,serif; font-size:12.0pt">2014 </span><span
+                    style="font-family:宋体; font-size:12.0pt">首张专辑《<strong>卡西莫多的礼物</strong>》</span></p>
 
-            <p><span style="font-family:times new roman,serif; font-size:12.0pt">2015 </span><span style="font-family:宋体; font-size:12.0pt">第二张专辑《<strong>异类</strong>》</span></p>
+            <p><span style="font-family:times new roman,serif; font-size:12.0pt">2015 </span><span
+                    style="font-family:宋体; font-size:12.0pt">第二张专辑《<strong>异类</strong>》</span></p>
 
-            <p><span style="font-family:times new roman,serif; font-size:12.0pt">2016 </span><span style="font-family:宋体; font-size:12.0pt">第三张专辑《<strong>造物者</strong>》</span></p>
+            <p><span style="font-family:times new roman,serif; font-size:12.0pt">2016 </span><span
+                    style="font-family:宋体; font-size:12.0pt">第三张专辑《<strong>造物者</strong>》</span></p>
+            <p><strong>部分歌曲：</strong></p>
 
-            <p><strong><h4><a href="http://hhlweb.com:8080/index_hcl.html">部分歌曲介绍</a></h4></strong></p>
+
+            <p><span style="font-size:16px"><strong>1.《国王与乞丐》</strong>是华晨宇第二张专辑《异类》里与杨宗纬合唱的一首歌。歌曲由马来西亚联合作曲人Mike Chan & Faizal Tahir作曲，代岳东填词，郑楠担任制作人。于2015年6月26日首发。8月7日，歌曲MV正式发布。</span>
+            </p>
+            <p><span style="font-size:16px"><strong>2.《好想爱这个世界啊》</strong>是由裴育作词，华晨宇作曲并演唱的一首歌曲，于2019年12月4日以数字单曲形式发行 ，后收录于华晨宇2020年4月8日14:07发行的专辑《新世界NEW WORLD》中。</span>
+            </p>
+            <p><span style="font-size:16px"><strong>3.《斗牛》</strong>在2018年华晨宇火星鸟巢演唱会上作为新歌首唱，气氛引爆，全场炸裂。欢呼声不绝于耳，华晨宇再一次向我们展示了他高超的作曲能力，前奏就使人攒满了期待。《斗牛》开头就是一段超低磁性的rap，配合着盛大的鼓点和音响效果，真正把我们带到了他的国度，眼前再现遥远伊比利亚斗牛场上的生死较量，让人热血沸腾。</span>
+            </p>
+            <p><span style="font-size:16px"><strong>4.《我管你》</strong>是由郭德紫毅作词，华晨宇作曲并演唱的歌曲，收录于华晨宇2015年12月15日发行的专辑《异类》中。该曲于2017年2月27日推出真我版MV。</span>
+            </p>
+            <p><span style="font-size:16px"><strong>5.《寒鸦少年》</strong>2018年为鸟巢演唱会准备的四专里的新歌。</span>
+            </p>
+            <span style="font-size:16px"><strong>6.《降临》</strong>华晨宇烟嗓演绎，最后高音震撼全场,真给歌坛界长脸 2020年06月01日发布。</span>
 
             <p><strong>演唱</strong><strong>会</strong></p>
 
@@ -146,13 +280,41 @@
                 </tr>
                 </tbody>
             </table>
-
         </div>
-
-        </div>
-
     </div>
-</div>
+</div>>
 
+        <!-- js部分 -->
+        <script type="text/javascript">
+            var aImgs = document.querySelectorAll('.container img');
+            var aLis = document.querySelectorAll('.container li');
+            var btnLeft = document.querySelector('.container .left');
+            var btnRight = document.querySelector('.container .right');
+
+            var index = 0;        //当前图片下标
+            var lastIndex = 0;
+            btnRight.onclick = function () {
+                lastIndex = index;
+                aImgs[lastIndex].className = '';
+                aLis[lastIndex].className = '';
+
+                index++;
+                index %= aImgs.length;
+                aImgs[index].className = 'on';
+                aLis[index].className = 'active';
+            };
+            btnLeft.onclick = function () {
+                lastIndex = index;
+                aImgs[lastIndex].className = '';
+                aLis[lastIndex].className = '';
+
+                index--;
+                if (index < 0) {
+                    index = aImgs.length - 1;
+                }
+                aImgs[index].className = 'on';
+                aLis[index].className = 'active';
+            }
+        </script>
 </body>
 </html>
